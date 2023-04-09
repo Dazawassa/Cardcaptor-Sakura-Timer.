@@ -1,0 +1,39 @@
+@font-face{
+    font-family: Garton;
+    src: url(fonts/Garton.ttf);
+}
+
+@keyframes cursor{
+    0% { 
+        cursor: url(cursor/cursor/frame1.gif), auto;
+    }
+    50% { 
+        cursor: url(cursor/cursor/frame2.gif), auto;
+    }
+    100% { 
+        cursor: url(cursor/cursor/frame3.gif), auto;
+    }
+}
+
+html, body{
+    cursor: url("cursor/cursor.gif"), auto;
+    animation: cursor 0.4s linear infinite;
+}
+
+body{
+    font-family: Garton;
+    text-align: center;
+    height: 800px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    background-image: url("images/Background.jpg");
+    
+}
+
+timer{
+    font-weight: bold;
+    font-size: 96px;
+    letter-spacing: 5px;
+}
